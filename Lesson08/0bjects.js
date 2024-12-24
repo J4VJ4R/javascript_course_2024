@@ -1,22 +1,13 @@
-let person = {
-  name: 'Juan',
-  lastname: 'Jimenes',
-  age: 41,
-  fullname: function(){
-    return this.name + ' ' + this.lastname;
+//class
+
+class Person {
+  constructor(name, lastname){
+    this.name = name;
+    this.lastname = lastname;
   }
 }
 
-console.log(person.name + ' ' + person.lastname)
-
-for(valueperson in person){
-  console.log(person[valueperson])
-}
-
-objPerson = Object.values(person)
-
-console.log(objPerson)
-
-dataPerson = JSON.stringify(person)
-
-console.log(dataPerson)
+let user1 = new Person('Juan', 'Jara')
+console.log(user1)
+let user2 = new Person('Carlos', 'Caracol');
+console.log(user2)
